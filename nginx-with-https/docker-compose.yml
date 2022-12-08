@@ -12,6 +12,6 @@ services:
     volumes:
       - ./ssl/server.crt:/etc/nginx/certs/server.crt
       - ./ssl/server.key:/etc/nginx/certs/server.key
-      - ./volume-files/default-separate-by-port.conf:/etc/nginx/conf.d/default.conf
+      - ./volume-files/default-separated-by-port.conf:/etc/nginx/conf.d/default.conf
       - ./volume-files/index-http.html:/usr/share/nginx/html/index-http.html
       - ./volume-files/index-https.html:/usr/share/nginx/html/index-https.html
